@@ -1,0 +1,28 @@
+dbtlearn:
+  outputs:
+    dev:
+      account: OLWYCYI-NH82243
+      database: AIRBNB
+      password: TestPassword123!
+      role: TRANSFORM
+      schema: DEV
+      threads: 1
+      type: snowflake
+      user: felixtom
+      warehouse: COMPUTE_WH
+  target: dev
+default:
+  outputs:
+    dev:
+      account: attomdata-production
+      authenticator: externalbrowser
+      client_session_keep_alive: false
+      database: DEVELOPMENT
+      query_tag: dbt_felixtattom
+      role: ENGINEER
+      schema: dbt_felixtattom
+      threads: 4
+      type: snowflake
+      user: felix.tom@attomdata.com
+      warehouse: ENGINEER
+  target: dev
